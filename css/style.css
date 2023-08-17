@@ -1,0 +1,500 @@
+/* css Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* css variable */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigartion */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+/* #navbar{ */
+/* position: relative; */
+/* } */
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 550px;
+    align-items: center;
+}
+
+#home::before {
+    content: " ";
+    position: absolute;
+    background: url('../bggg.jpg') no-repeat center center/cover;
+    height: 642px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    opacity: 5;
+}
+
+#home h1 {
+    color: rgb(254, 250, 4);
+    text-shadow: 2px 2px 10px rgba(248, 7, 15, 0.955);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: rgb(251, 251, 255);
+    text-shadow: 2px 2px 15px rgb(230, 12, 12);
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-family: 'Bree Serif', serif; */
+}
+
+/* utality class */
+.btn {
+    padding: 6px 20px;
+    border: 3px solid white;
+    box-shadow: 2px 2px 14px rgb(248, 227, 0);
+    background-color: rgb(154, 54, 126);
+    color: rgb(12, 6, 6);
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    background-color: indianred;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.center {
+    text-align: center;
+}
+
+/* service section */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    box-shadow: 6px 6px 68px yellow;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: antiquewhite;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+
+/* client section */
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: " ";
+    position: absolute;
+    background: url('../bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 170px;
+}
+
+.client-item {
+    padding: 10px;
+    z-index: -1;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: " ";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 30%;
+}
+
+.from-group input {
+    border-radius: 9px;
+    text-align: center;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box button {
+    border-radius: 6px;
+    height: 30px;
+    width: 80px;
+}
+
+#contact-box button:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: rgb(22, 127, 22);
+    cursor: pointer;
+}
+
+.item1 {
+    width: 150px;
+    height: 150px;
+    /* background-color: rgb(204, 167, 238); */
+    /* border: 3px solid rgb(115, 19, 77); */
+    margin: 6px;
+    padding: 3px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    ;
+}
+
+#photo-gallary h1 {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+#item1 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item1 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item2 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item2 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item3 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item3 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item4 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item4 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item5 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item5 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item6 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item6 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item7 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item7 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item8 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item8 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item9 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 28px rgb(218, 218, 99);
+    transition: all 2s ease-in-out 0.1s;
+}
+
+#item9 img:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+#item1 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item2 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item3 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item4 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item5 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item6 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item7 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item8 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#item9 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+#photo-gallary::before {
+    content: " ";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 38%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.search input {
+    border: 2px solid black;
+    border-radius: 14px;
+    margin: 0px 250px;
+    padding: 3px 7px;
+}
+
+footer {
+    background-color: rgb(242, 222, 210);
+    color: rgb(28, 9, 245);
+    padding: 2px 10px;
+}
+
+.follow ul {
+    display: flex;
+    font-family: 'Bree Serif', serif;
+    margin: 5px 30px;
+}
+
+.follow ul li {
+    list-style: none;
+    display: flex;
+}
+
+.follow ul li a {
+    display: block;
+    padding:0px 22px;
+    color: rgb(15, 8, 8);
+    text-shadow: 2px 2px 15px rgb(255, 242, 0);
+}
+
+.follow ul li a:hover{
+    background-color: rgb(233, 152, 22);
+    color: white;
+    border-radius: 10px;
+}
+
+.select label{
+    color: rgb(255, 217, 3);
+    text-shadow: 2px 2px 15px red;
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+}
